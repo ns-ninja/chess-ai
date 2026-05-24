@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Profile — Neal's Chess Coach{% endblock %}
+{% block content %}
+<div class="card">
+  <h1>Player Profile</h1>
+  <p style="color:var(--muted);margin:12px 0 18px">Games analyzed: {{ games_count }}.</p>
+  <div style="display:grid;grid-template-columns:1fr;gap:16px">
+    <div class="card">
+      <h2 style="margin-bottom:10px">Current rating</h2>
+      <p style="font-size:24px;margin:0">{{ player.uscf_rating or 'Unrated' }}</p>
+    </div>
+    <div class="card">
+      <h2 style="margin-bottom:10px">Weakness profile</h2>
+      {% if weakness_profile %}
+      <ul style="list-style:none;padding:0;display:grid;gap:10px">
+        {% for item in weakness_profile[:8] %}
+        <li style="padding:10px 14px;border:1px solid var(--border);border-radius:10px;background:var(--faint)">
+          <strong>{{ item.pattern_name }}</strong> — {{ item.occurrences }} occurrences
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p style="color:var(--muted)">No weakness profile yet. Upload a game to generate one.</p>
+      {% endif %}
+    </div>
+  </div>
+  <div style="margin-top:20px">
+    <a class="btn btn-primary" href="/profile/study-plan">Generate study plan</a>
+  </div>
+</div>
+{% endblock %}

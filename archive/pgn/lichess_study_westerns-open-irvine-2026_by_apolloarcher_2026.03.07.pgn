@@ -1,0 +1,80 @@
+[Event "Westerns Open Irvine 2026: David Baran (1826) vs. Neal Sundar (1713) draw"]
+[Date "2026.03.07"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "E38"]
+[Opening "Nimzo-Indian Defense: Classical Variation, Berlin Variation"]
+[StudyName "Westerns Open Irvine 2026"]
+[ChapterName "David Baran (1826) vs. Neal Sundar (1713) draw"]
+[ChapterURL "https://lichess.org/study/3NH421zh/hgU3vKAd"]
+[Annotator "https://lichess.org/@/apolloarcher"]
+[UTCDate "2026.03.07"]
+[UTCTime "04:44:12"]
+
+1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Qc2 O-O 5. Nf3 d5 6. e3 c5 7. cxd5 exd5 8. dxc5 (8. Be2 c4 9. Bd2 Qa5 { [%csl Gc4,Gd5] }) 8... Qa5 (8... Nc6 9. a3 Bxc5 10. b4 Bb6) 9. Bd2 Qxc5 10. a3 { [%cal Gb2b4] } 10... Bxc3 11. Bxc3 Ne4 12. Bd3 Re8 13. Rc1 h6 (13... Nc6 14. O-O Bg4) 14. O-O Nc6 15. Rfd1 Nxc3 16. Qxc3 Qxc3 17. Rxc3 Bg4 18. Be2 { [%csl Gb7][%cal Gg4f3,Ge2f3,Gd5d4,Ge3d4,Gc6d4,Gf3b7] } 18... Rad8 19. h3 Bh5 (19... d4 20. Nxd4 { [%csl Ge2][%cal Gg4e2] } (20. exd4 Rxe2)) 20. Bb5 { [%csl Gd4][%cal Gd5d4] } 20... Bxf3 (20... d4 21. exd4 { [%cal Gh5f3,Gc6d4,Gd4b5] }) 21. gxf3 Re6 22. Bxc6 bxc6 23. e4 d4 24. Rcd3 c5 25. Rc1 Re5 26. Rc4 f5 27. exf5 Rxf5 28. b4 cxb4 29. Rxb4 Rdf8 30. Kg2 Rg5+ 31. Kh2 Rgf5 32. Kg2 Rg5+ 33. Kh2 Rgf5 34. Kg2 { Draw by repetition } *
+
+
+[Event "Westerns Open Irvine 2026: Neal Sundar (1713) vs. Grant Yosenick (1852) win"]
+[Date "2026.03.07"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "D00"]
+[Opening "Queen's Pawn Game: Accelerated London System"]
+[StudyName "Westerns Open Irvine 2026"]
+[ChapterName "Neal Sundar (1713) vs. Grant Yosenick (1852) win"]
+[ChapterURL "https://lichess.org/study/3NH421zh/odzQqtmf"]
+[Annotator "https://lichess.org/@/apolloarcher"]
+[UTCDate "2026.03.07"]
+[UTCTime "22:14:13"]
+
+1. d4 d5 2. Bf4 e6 3. e3 Bd6 4. Bg3 { [%csl Ge7] } 4... Nf6 5. Nf3 (5. Nd2 c5 6. c3 Nc6 7. Bd3 { [%csl Gf3][%cal Gd1f3] }) 5... c5 6. c3 Nc6 7. Bd3 cxd4 8. exd4 Qc7 9. O-O Bxg3 { [%csl Gg3][%cal Gh2g3] } 10. fxg3 (10. hxg3 O-O 11. Re1 { [%csl Ge5][%cal Ge1e5] } 11... Bd7 12. Nbd2 Rfe8 13. Ne5 { [%csl Ge5][%cal Ge1e5] } 13... Nxe5 14. dxe5 Ne4) 10... Bd7 { [%csl Gd4,Ge5][%cal Gf1e1,Gf3e5] } 11. Qe2 (11. Nbd2 Qb6 (11... O-O 12. Re1 Rfe8 13. Ne5 Qb6 { [%csl Gg1][%cal Gc6e5,Gd4e5,Gb6g1] }) 12. Re1 { [%csl Gb2][%cal Gb6b2] }) 11... O-O 12. Kh1 a6 13. Ne5 Nxe5 14. dxe5 Ne8 15. Nd2 g6 16. Nf3 f6 17. Rae1 Ng7 18. g4 Bb5 19. Bxb5 axb5 20. exf6 Rxf6 21. Nd4 Rxf1+ 22. Rxf1 Rxa2 23. Nxb5 Qe7 24. Qf2 Ne8 25. Na3 Nd6 26. Qb6 Nc4 27. Nxc4 dxc4 28. h3 Ra6 29. Qd4 b5 30. Qe5 Rb6 31. Ra1 Qd8 32. Ra5 Qd5 33. Qc7 Rd6 { [%csl Ga7][%cal Ga5a7] } 34. Rxb5 Qxb5 35. Qxd6 Qxb2 36. Qxe6+ Kg7 37. Qxc4 Qc1+ 38. Kh2 Qe1 39. Qd4+ Kg8 40. c4 Qb1 41. c5 Kf7 42. Qd6 Qe4 43. c6 Qe7 44. Qxe7+ Kxe7 45. Kg3 Kd6 46. Kf4 Kxc6 47. Ke5 Kd7 48. Kf6 Kd6 49. g5 Kd5 50. Kg7 Ke5 51. Kxh7 Kf5 52. Kh6 { Black Resignation } *
+
+
+[Event "Westerns Open Irvine 2026: Isaac Lien (1826) vs. Neal Sundar (1713) loss"]
+[Date "2026.03.08"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B94"]
+[Opening "Sicilian Defense: Najdorf Variation"]
+[StudyName "Westerns Open Irvine 2026"]
+[ChapterName "Isaac Lien (1826) vs. Neal Sundar (1713) loss"]
+[ChapterURL "https://lichess.org/study/3NH421zh/9OFYrxOu"]
+[Annotator "https://lichess.org/@/apolloarcher"]
+[UTCDate "2026.03.08"]
+[UTCTime "03:47:32"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 h6 7. Bh4 e6 8. f4 Be7 9. Qd2 d5 (9... b5) 10. Bxf6 Bxf6 11. e5 { [%csl Ge7][%cal Gf6e7] } 11... Be7 (11... Bh4+ 12. g3 Be7 { [%cal Ge8g8,Gf7f6,Gd8e8,Ge8h5,Gh5d1] }) 12. O-O-O Qc7 13. Qe3 Nc6 14. Qg3 O-O 15. h4 { [%csl Gb5][%cal Gb7b5] } 15... Bc5 (15... Nxd4 16. Rxd4 b5 { [%csl Gb5] }) 16. Nb3 Be7 (16... Ba7 17. Bd3) 17. Qe3 b5 (17... d4 { [%csl Ge3] } 18. Nxd4 Bc5 19. Nce2 b5 20. Qd3 (20. Qc3 Nxd4 21. Nxd4 b4 22. Qg3 Bb7 { [%csl Gc2][%cal Ga8c8,Gf8d8,Gc7c2] })) 18. g4 Na5 (18... Bb7 { [%csl Gd4][%cal Gd5d4] } 19. Bg2 d4 20. Nxd4 Nxd4 21. Bxb7 Bc5 { [%csl Gc5,Gb6] } 22. Ne4 (22. Qd3 Qxb7) 22... Bb6) 19. g5 Nxb3+ 20. axb3 h5 21. Be2 g6 22. f5 b4 23. Na4 exf5 (23... d4 { [%csl Gd4] }) 24. Bf3 Bb7 25. Bxd5 Bxd5 26. Rxd5 Qc6 (26... Rac8) 27. Rhd1 Rfd8 28. Qf3 Rxd5 29. Rxd5 Rc8 30. Qd1 Qc7 31. Kb1 Rd8 32. Qd3 Rxd5 33. Qxd5 Qd8 34. Qb7 { [%cal Gf5f1] } 34... a5 (34... Bxg5) (34... f4) 35. Nb6 Bc5 { [%csl Gf6] } 36. Nd7 Bf2 37. Nf6+ Kf8 38. e6 (38. Ka2 Bxh4 39. c4 bxc3) 38... fxe6 39. Qh7 Bxh4 40. Qxg6 Ke7 41. Qxh5 Bxg5 42. Qxg5 Qd1+ 43. Ka2 Qxc2 44. Qg7+ Kd6 45. Ne8+ Kd5 46. Nc7+ Ke4 47. Nxe6 Qd1 48. Qc7 Qd5 49. Qf4+ Kd3 50. Ng7 Ke2 51. Nxf5 a4 52. Qc4+ { Black resignation } *
+
+
+[Event "Westerns Open Irvine 2026: Neal Sundar (1713) vs. Miller Zhang (1849) draw"]
+[Date "2026.03.08"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "D00"]
+[Opening "Queen's Pawn Game: Accelerated London System"]
+[StudyName "Westerns Open Irvine 2026"]
+[ChapterName "Neal Sundar (1713) vs. Miller Zhang (1849) draw"]
+[ChapterURL "https://lichess.org/study/3NH421zh/3YS6EHdy"]
+[Annotator "https://lichess.org/@/apolloarcher"]
+[UTCDate "2026.03.08"]
+[UTCTime "19:55:14"]
+
+1. d4 d5 2. Bf4 Nf6 3. e3 Bf5 4. Nf3 e6 5. Nbd2 Be7 6. Nh4 Bg6 7. Nxg6 hxg6 8. Be2 Nbd7 9. c3 c6 10. Qc2 Qb6 11. O-O-O O-O-O 12. c4 Rde8 13. h3 Bd8 14. Nf3 Nh5 15. Bh2 Bc7 16. Bxc7 (16. Ne5 Nxe5 17. dxe5 Qa5 18. Kb1 { [%csl Gg4] }) 16... Qxc7 17. Kb1 Re7 18. Qa4 Kb8 19. Rc1 Nhf6 20. Bd3 { Black offers draw, White accepts } 20... Qd6 21. c5 Qc7 22. Ka1 { [%cal Gb2b4,Gb4b6] } (22. Rhd1 e5 23. Bf1 { [%cal Gd1d3,Gd3a3] } 23... e4 24. Nd2 { [%cal Gc1c3,Gc3a3] }) *
+
+
+[Event "Westerns Open Irvine 2026: Stewart Katz (1882) vs. Neal Sundar (1713) loss"]
+[Date "2026.03.09"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B22"]
+[Opening "Sicilian Defense: Alapin Variation"]
+[StudyName "Westerns Open Irvine 2026"]
+[ChapterName "Stewart Katz (1882) vs. Neal Sundar (1713) loss"]
+[ChapterURL "https://lichess.org/study/3NH421zh/3p1s7G90"]
+[Annotator "https://lichess.org/@/apolloarcher"]
+[UTCDate "2026.03.09"]
+[UTCTime "00:22:15"]
+
+1. e4 c5 2. c3 Nf6 3. e5 Nd5 4. Nf3 Nc6 5. d4 cxd4 6. cxd4 e6 7. Bc4 Nb6 8. Bb5 Bb4+ (8... d6) 9. Nc3 O-O { [%csl Gd6,Ge7,Gf6] } 10. O-O d6 11. Bg5 Qc7 12. exd6 Bxd6 13. Rc1 a6 14. Bd3 Bf4 15. Bxf4 Qxf4 16. Re1 Nb4 17. Bb1 N4d5 18. Re4 Qf6 19. Rh4 h6 20. Qd3 Qf5 21. Qd2 Qf6 22. Ne4 Qe7 23. Ng3 Nf6 24. Rxh6 gxh6 25. Qxh6 Nbd5 26. Nh5 Nxh5 27. Qh7# *
+
+

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Study Plan — Neal's Chess Coach{% endblock %}
+{% block content %}
+<div class="card">
+  <h1>Study Plan</h1>
+  <p style="color:var(--muted);margin:12px 0 18px">A coaching plan based on your current weakness profile.</p>
+  <div class="card" style="margin-bottom:18px">
+    <h2 style="margin-bottom:12px">Immediate priority</h2>
+    <p>{{ plan.immediate_priority or 'No priority available yet.' }}</p>
+  </div>
+  <div class="card">
+    <h2 style="margin-bottom:12px">Weekly plan</h2>
+    {% if plan.weekly_plans %}
+      {% for week in plan.weekly_plans %}
+      <div style="margin-bottom:18px">
+        <h3 style="margin-bottom:8px">Week {{ week.week }}: {{ week.focus }}</h3>
+        <div style="color:var(--muted);margin-bottom:8px">Goal: {{ week.goal }}</div>
+        <strong>Daily tasks</strong>
+        <ul style="padding-left:18px;color:var(--text)">
+          {% for task in week.daily_tasks %}
+          <li>{{ task }}</li>
+          {% endfor %}
+        </ul>
+        <strong>Resources</strong>
+        <ul style="padding-left:18px;color:var(--text)">
+          {% for resource in week.resources %}
+          <li>{{ resource }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    {% else %}
+      <p style="color:var(--muted)">No study plan available yet.</p>
+    {% endif %}
+  </div>
+  <div style="margin-top:20px">
+    <a class="btn btn-secondary" href="/profile/">Back to profile</a>
+  </div>
+</div>
+{% endblock %}

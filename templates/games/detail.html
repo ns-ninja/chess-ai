@@ -1,0 +1,240 @@
+{% extends "base.html" %}
+{% block title %}Game vs {{ game.opponent_name }} — Neal's Coach{% endblock %}
+{% block head %}
+<style>
+.game-layout{display:grid;grid-template-columns:380px 1fr;gap:20px;align-items:start}
+@media(max-width:768px){.game-layout{grid-template-columns:1fr}}
+.board-panel{position:sticky;top:20px}
+#board{width:360px!important}
+.moment-btn{width:100%;text-align:left;background:var(--faint);border:1px solid var(--border);
+  border-radius:8px;padding:12px 14px;margin-bottom:8px;cursor:pointer;transition:all .15s}
+.moment-btn:hover,.moment-btn.active{border-color:var(--purple);background:#1e1a35}
+.moment-btn .move{font-family:monospace;font-size:12px;color:var(--purple)}
+.moment-btn h4{font-size:13px;color:#fff;margin:4px 0}
+.moment-btn p{font-size:12px;color:var(--muted);line-height:1.5}
+.tip-box{border-radius:8px;padding:12px;margin-top:10px;font-size:12px;line-height:1.6}
+.tip-bad{background:#2a1515;border:1px solid #5a2020;color:#fca5a5}
+.tip-good{background:#0f2a1a;border:1px solid #1e5530;color:#86efac}
+.tip-tip{background:#2a2510;border:1px solid #5a5020;color:#fde68a}
+.verdict-box{background:#1e2535;border:1px solid #2e3a55;border-left:4px solid var(--purple);
+  border-radius:0 12px 12px 0;padding:16px;margin-bottom:16px;font-size:14px;line-height:1.75;color:#c8c5bd}
+.chat-box{border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-top:16px}
+.chat-msgs{height:240px;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px}
+.msg{font-size:13px;line-height:1.65;padding:8px 12px;border-radius:8px;max-width:90%}
+.msg.coach{background:var(--faint);border:1px solid var(--border);color:#c8c5bd;align-self:flex-start}
+.msg.user{background:#1e1a35;border:1px solid #3d3568;color:#e8e6de;align-self:flex-end}
+.chat-input-row{display:flex;gap:8px;padding:10px;border-top:1px solid var(--border)}
+.chat-input{flex:1;background:#12151e;border:1px solid var(--border);border-radius:8px;
+  padding:8px 12px;color:var(--text);font-size:13px;outline:none;font-family:inherit}
+.chat-input:focus{border-color:var(--purple)}
+</style>
+{% endblock %}
+
+{% block content %}
+{% set analysis = game.analyses %}
+{% set color_badge = 'badge-win' if game.result == 'win' else 'badge-loss' if game.result == 'loss' else 'badge-draw' %}
+
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap">
+  <span class="badge {{ color_badge }}">{{ game.result.upper() }} ⬜</span>
+  <h1 style="font-size:20px;font-weight:600;color:#fff">
+    vs {{ game.opponent_name }} ({{ game.opponent_rating }})
+  </h1>
+  <span style="color:var(--muted);font-size:13px">{{ game.opening_name }} · {{ game.played_at }}</span>
+</div>
+
+{% if analysis %}
+  <div class="verdict-box">{{ analysis.verdict }}</div>
+{% endif %}
+
+<div class="game-layout">
+  <!-- BOARD PANEL -->
+  <div class="board-panel">
+    <div class="card" style="padding:14px">
+      <div id="board"></div>
+      <div style="display:flex;justify-content:space-between;margin-top:10px">
+        <button class="btn btn-secondary" id="btn-prev" onclick="prevMove()">← Prev</button>
+        <span id="move-label" style="font-size:12px;color:var(--muted);align-self:center">
+          Starting position
+        </span>
+        <button class="btn btn-secondary" id="btn-next" onclick="nextMove()">Next →</button>
+      </div>
+    </div>
+
+    <!-- Coach chat -->
+    <div class="chat-box" x-data="chatApp()" x-init="init()">
+      <div style="padding:10px 14px;border-bottom:1px solid var(--border);font-size:12px;color:var(--muted)">
+        💬 Ask about this game
+      </div>
+      <div class="chat-msgs" id="chat-msgs">
+        <div class="msg coach">
+          Ask me about any move or position in this game — I know your full history.
+        </div>
+      </div>
+      <div style="padding:8px 10px;border-top:1px solid #1e2235;display:flex;flex-wrap:wrap;gap:6px">
+        <button onclick="quickAsk('Why did I lose this game?')"
+          style="background:#12151e;border:1px solid var(--border);border-radius:20px;padding:4px 10px;color:var(--muted);font-size:11px;cursor:pointer">
+          Why did I lose?
+        </button>
+        <button onclick="quickAsk('What should I study after this game?')"
+          style="background:#12151e;border:1px solid var(--border);border-radius:20px;padding:4px 10px;color:var(--muted);font-size:11px;cursor:pointer">
+          What to study?
+        </button>
+      </div>
+      <div class="chat-input-row">
+        <input class="chat-input" id="chat-input" placeholder="Ask about any move…"
+          onkeydown="if(event.key==='Enter') sendChat()"/>
+        <button class="btn btn-primary" onclick="sendChat()">↑</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ANALYSIS PANEL -->
+  <div>
+    {% if analysis and analysis.key_moments %}
+    <div class="card">
+      <div style="font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);margin-bottom:14px">
+        Key Moments — click to jump to position
+      </div>
+      {% for moment in analysis.key_moments %}
+      <button class="moment-btn" onclick="jumpToMoment({{ moment.move_number }}, '{{ moment.type }}')">
+        <div class="move">Move {{ moment.move_number }} · {{ moment.move }}</div>
+        <h4>{{ moment.title }}</h4>
+        <p>{{ moment.explanation[:120] }}…</p>
+        {% if moment.principle %}
+        <div class="tip-box {{ 'tip-bad' if moment.type in ['critical','inaccuracy'] else 'tip-good' if moment.type == 'good' else 'tip-tip' }}"
+          style="margin-top:8px">
+          {{ moment.principle }}
+        </div>
+        {% endif %}
+      </button>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if analysis %}
+    <div class="card">
+      <div style="font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);margin-bottom:12px">Strengths</div>
+      {% for s in analysis.strengths %}
+      <div style="display:flex;gap:8px;margin-bottom:8px;font-size:13px;color:#86efac">
+        <span>✓</span><span>{{ s }}</span>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="card">
+      <div style="font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);margin-bottom:12px">Areas to improve</div>
+      {% for w in analysis.weaknesses %}
+      <div style="display:flex;gap:8px;margin-bottom:8px;font-size:13px;color:#fca5a5">
+        <span>△</span><span>{{ w }}</span>
+      </div>
+      {% endfor %}
+    </div>
+
+    {% if analysis.coach_notes %}
+    <div class="card" style="border-color:#3d3568">
+      <div style="font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:var(--purple);margin-bottom:10px">
+        📚 Study recommendation
+      </div>
+      <p style="font-size:14px;color:#c8c5bd;line-height:1.75">{{ analysis.coach_notes }}</p>
+    </div>
+    {% endif %}
+    {% endif %}
+  </div>
+</div>
+
+<script>
+const PGN = {{ game.pgn | tojson }};
+const GAME_ID = "{{ game.id }}";
+
+// Parse game and build move list
+const chess = new Chess();
+chess.load_pgn(PGN);
+const history = chess.history({ verbose: true });
+chess.reset();
+
+let currentMove = -1;
+let board;
+
+function initBoard() {
+  board = Chessboard('board', {
+    position: 'start',
+    pieceTheme: 'https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/img/chesspieces/wikipedia/{piece}.png'
+  });
+}
+
+function updateBoard() {
+  const chess2 = new Chess();
+  for (let i = 0; i <= currentMove && i < history.length; i++) {
+    chess2.move(history[i]);
+  }
+  board.position(chess2.fen(), false);
+  const lbl = document.getElementById('move-label');
+  if (currentMove < 0) {
+    lbl.textContent = 'Starting position';
+  } else {
+    const mv = history[currentMove];
+    lbl.textContent = `Move ${Math.floor(currentMove/2)+1}${currentMove%2===0?' (White)':' (Black)'}: ${mv.san}`;
+  }
+}
+
+function nextMove() {
+  if (currentMove < history.length - 1) { currentMove++; updateBoard(); }
+}
+function prevMove() {
+  if (currentMove >= 0) { currentMove--; updateBoard(); }
+}
+
+function jumpToMoment(moveNum, type) {
+  // moveNum is 1-based full move; convert to half-move index
+  // try White first (index = (moveNum-1)*2), then Black (index = (moveNum-1)*2+1)
+  let idx = (moveNum - 1) * 2;
+  if (idx < history.length) { currentMove = idx; updateBoard(); }
+  document.querySelectorAll('.moment-btn').forEach(b => b.classList.remove('active'));
+  event.currentTarget.classList.add('active');
+}
+
+$(document).ready(function() { initBoard(); });
+
+// Chat
+let chatHistory = [];
+
+async function sendChat() {
+  const input = document.getElementById('chat-input');
+  const msg = input.value.trim();
+  if (!msg) return;
+  input.value = '';
+  addMsg('user', msg);
+  chatHistory.push({ role: 'user', content: msg });
+  addMsg('coach', '…');
+  try {
+    const res = await fetch(`/analysis/${GAME_ID}/chat/message`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: msg, history: chatHistory.slice(-6) })
+    });
+    const data = await res.json();
+    updateLastMsg(data.reply);
+    chatHistory.push({ role: 'assistant', content: data.reply });
+  } catch (e) {
+    updateLastMsg('Connection error — please try again.');
+  }
+}
+
+function quickAsk(q) { document.getElementById('chat-input').value = q; sendChat(); }
+
+function addMsg(role, text) {
+  const c = document.getElementById('chat-msgs');
+  const d = document.createElement('div');
+  d.className = `msg ${role}`;
+  d.textContent = text;
+  d.id = role === 'coach' ? 'last-coach' : '';
+  c.appendChild(d);
+  c.scrollTop = c.scrollHeight;
+}
+
+function updateLastMsg(text) {
+  const el = document.getElementById('last-coach');
+  if (el) { el.textContent = text; el.id = ''; }
+}
+</script>
+{% endblock %}

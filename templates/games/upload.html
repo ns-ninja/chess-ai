@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Upload Game — Neal's Chess Coach{% endblock %}
+{% block content %}
+<div class="card">
+  <h1>Upload a Game</h1>
+  <form action="/games/upload" method="post" enctype="multipart/form-data" style="display:grid;gap:14px">
+    <label style="display:grid;gap:6px">
+      <span>PGN file</span>
+      <input type="file" name="pgn_file" accept=".pgn,text/plain" />
+    </label>
+    <label style="display:grid;gap:6px">
+      <span>Or paste PGN text</span>
+      <textarea name="pgn_text" rows="8" style="width:100%;background:var(--faint);border:1px solid var(--border);border-radius:10px;padding:12px;color:var(--text)"></textarea>
+    </label>
+    <label style="display:grid;gap:6px">
+      <span>Player color</span>
+      <select name="player_color" style="padding:10px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text)">
+        <option value="white">White</option>
+        <option value="black">Black</option>
+      </select>
+    </label>
+    <label style="display:grid;gap:6px">
+      <span>Tournament</span>
+      <input type="text" name="tournament" style="padding:10px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text)" />
+    </label>
+    <button class="btn btn-primary" type="submit">Upload game</button>
+  </form>
+</div>
+{% endblock %}

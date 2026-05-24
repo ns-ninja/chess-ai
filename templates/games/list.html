@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Games — Neal's Chess Coach{% endblock %}
+{% block content %}
+<div class="card">
+  <h1>Your Games</h1>
+  {% if games %}
+  <table style="width:100%;border-collapse:collapse;color:var(--text)">
+    <thead>
+      <tr style="text-align:left;border-bottom:1px solid var(--border);color:var(--muted)">
+        <th style="padding:10px">Date</th>
+        <th style="padding:10px">Opponent</th>
+        <th style="padding:10px">Result</th>
+        <th style="padding:10px">Opening</th>
+        <th style="padding:10px"></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for game in games %}
+      <tr style="border-bottom:1px solid var(--border)">
+        <td style="padding:10px">{{ game.played_at or '—' }}</td>
+        <td style="padding:10px">{{ game.opponent_name or 'Unknown' }}</td>
+        <td style="padding:10px">{{ game.result|capitalize }}</td>
+        <td style="padding:10px">{{ game.opening_name or game.opening_eco or 'Unknown' }}</td>
+        <td style="padding:10px"><a class="btn btn-secondary" href="/games/{{ game.id }}">View</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p style="color:var(--muted)">No games found yet. Upload a PGN to begin.</p>
+  {% endif %}
+  <div style="margin-top:20px">
+    <a class="btn btn-primary" href="/games/upload">Upload a game</a>
+  </div>
+</div>
+{% endblock %}

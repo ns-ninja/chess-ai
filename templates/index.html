@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Home — Neal's Chess Coach{% endblock %}
+{% block content %}
+<div class="card">
+  <h1 style="font-size:24px;margin-bottom:16px">Welcome to Neal's Chess Coach</h1>
+  <p style="color:var(--muted);margin-bottom:24px;max-width:720px;line-height:1.65">
+    Track your games, review weakness patterns, and get AI-powered coaching from one place.
+  </p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px">
+    <a class="card btn btn-secondary" href="/dashboard/" style="text-align:left;padding:18px">
+      <strong>Dashboard</strong>
+      <div style="margin-top:6px;color:var(--muted);font-size:13px">Progress charts, opening breakdown, and game trends.</div>
+    </a>
+    <a class="card btn btn-secondary" href="/games/" style="text-align:left;padding:18px">
+      <strong>Games</strong>
+      <div style="margin-top:6px;color:var(--muted);font-size:13px">Upload PGNs, browse games, and review analysis.</div>
+    </a>
+    <a class="card btn btn-secondary" href="/profile/" style="text-align:left;padding:18px">
+      <strong>Profile</strong>
+      <div style="margin-top:6px;color:var(--muted);font-size:13px">See your weakness profile and generate a study plan.</div>
+    </a>
+  </div>
+</div>
+{% endblock %}

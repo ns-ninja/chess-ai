@@ -1,0 +1,96 @@
+[Event "April Real Fide BAC: Armin Vale Cruz (1927) vs. Neal Sundar (1791) win"]
+[Date "2026.04.11"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B84"]
+[Opening "Sicilian Defense: Scheveningen Variation, Classical Variation"]
+[StudyName "April Real Fide BAC"]
+[ChapterName "Armin Vale Cruz (1927) vs. Neal Sundar (1791) win"]
+[ChapterURL "https://lichess.org/study/ruHk3jtQ/Xhdvdptw"]
+[Annotator "https://lichess.org/@/apolloarcher"]
+[UTCDate "2026.04.11"]
+[UTCTime "15:08:25"]
+
+1. e4 { [%eval 0.18] } 1... c5 { [%eval 0.32] } 2. Nf3 { [%eval 0.2] } 2... d6 { [%eval 0.31] } 3. d4 { [%eval 0.22] } 3... cxd4 { [%eval 0.19] } 4. Nxd4 { [%eval 0.18] } 4... Nf6 { [%eval 0.31] } 5. Nc3 { [%eval 0.32] } 5... a6 { [%eval 0.25] } 6. Be2 { [%eval 0.19] } 6... e6 { [%eval 0.33] } 7. a4 { [%eval 0.21] } 7... Nc6 { [%eval 0.37] } 8. Be3 { [%eval 0.23] } 8... Be7 { [%eval 0.22] } (8... d5 9. exd5 Nxd5 (9... exd5 { [%csl Gd5][%cal Gc8g4,Gf8d6,Gd6h2] }) 10. Nxd5) 9. O-O { [%eval 0.23] } 9... O-O { [%eval 0.28] } 10. Nb3 { [%eval 0.1] } 10... Nb4 { [%eval 0.51] } (10... d5) 11. a5 { [%eval 0.52] [%csl Ge5][%cal Ge4e5] } 11... d5 { [%eval 0.96] } 12. e5?! { [%eval 0.35] } { Inaccuracy. Bb6 was best. } (12. Bb6 Qe8 13. Bf3 dxe4 14. Nxe4 Nbd5 15. c4 Nxb6 16. axb6 Nxe4 17. Bxe4 f5) 12... Nd7 { [%eval 0.42] } 13. f4 { [%eval 0.43] } 13... Qc7 { [%eval 0.55] } 14. Kh1 { [%eval 0.57] } 14... Nc5 { [%eval 0.59] } 15. Nd4 { [%eval 0.56] } 15... Nc6 { [%eval 0.76] } 16. Nb3 { [%eval 0.23] } 16... Nxb3 { [%eval 0.24] } 17. Bb6 { [%eval 0.1] } 17... Qd7 { [%eval 0.34] } 18. cxb3 { [%eval 0.25] } 18... Bd8 { [%eval 0.4] } 19. Na4 { [%eval 0.49] } 19... Rb8 { [%eval 0.79] } (19... Nxa5 { [%csl Ga5,Gd3][%cal Gd3h7] }) 20. Bd3 { [%eval 0.35] } 20... Bxb6 { [%eval 0.33] } 21. Nxb6 { [%eval 0.52] [%csl Gg6][%cal Gg7g6] } 21... Qd8?! { [%eval 1.29] } { Inaccuracy. Qe7 was best. } { [%csl Gh5,Gf3,Gh3,Gh8] } (21... Qe7 22. Bxh7+ Kxh7 23. Qh5+ Kg8 24. Rf3 f5 (24... Bd7 25. g4 f5 26. g5 Be8 27. g6) 25. Rh3 Bd7 26. Qh8+ Kf7 27. Qh5+ g6 { [%csl Ge8] } 28. Qh7+ Ke8 29. Qxg6+ Qf7 { [%csl Gf7] }) 22. Qh5?! { [%eval 0.33] } { Inaccuracy. Bxh7+ was best. } (22. Bxh7+ Kxh7 23. Qh5+ Kg8 24. Rf3 Bd7 (24... f6 25. Rh3) (24... f5 25. Rh3 { [%cal Ga1e1,Ge1e3,Ge3g3,Gg3g7] } 25... Qe8 26. Qh8+ Kf7 27. Qh5+ Kg8 28. Qh7+ Kf7 29. Rh6 { [%csl Gf6][%cal Gh6f6] }) (24... Qe7 25. Rh3 f5 26. Qg6 Qe8 27. Qh7+ Kf7) 25. Rh3) 22... g6 { [%eval 0.32] } 23. Qh6 { [%eval 0.4] } 23... f5 { [%eval 0.36] } 24. Rf3? { [%eval -0.87] } { Mistake. exf6 was best. } (24. exf6 Qxf6 25. Rac1 Qg7 26. Qxg7+ Kxg7 27. Kg1 Rf7 28. Bxa6 Nxa5 29. Bb5 Nc6) 24... Nxa5 { [%eval -0.77] } 25. Nxc8 { [%eval -1.22] } 25... Rxc8 { [%eval -1.35] } 26. h4 { [%eval -1.77] } 26... Nxb3 { [%eval -1.74] } 27. h5?! { [%eval -2.68] } { Inaccuracy. Rd1 was best. } (27. Rd1 Qe7 28. Bxa6 Nc5 29. Bd3 Ne4 30. Kh2 Rc6 31. Ra1 Qg7 32. Qxg7+ Kxg7) 27... Qh4+?? { [%eval -0.57] } { Blunder. Nxa1 was best. } (27... Nxa1 28. hxg6 Qe7 29. Rg3 Nb3 30. Rg5 Nc5 31. Qh4 Rc7 32. Bc2 Ne4 33. Bxe4) 28. Rh3 { [%eval -0.65] } 28... Qe7 { [%eval -0.65] } 29. hxg6?? { [%eval -2.87] } { Blunder. Ra3 was best. } (29. Ra3 g5 30. fxg5 Nc5 31. g6 Kh8 32. Kh2 Qg7 33. Qf4 Rg8 34. Rg3 Nxd3) 29... Nxa1 { [%eval -2.88] } 30. Rg3 { [%eval -3.25] } 30... Rc7?! { [%eval -2.18] } { Inaccuracy. Nb3 was best. } (30... Nb3 31. Kh2 Nc5 32. Bb1 Ne4 33. Bxe4 dxe4 34. Kg1 Rc7 35. Kh2 b5 36. Kg1) 31. gxh7+? { [%eval -3.88] } { Mistake. Kh2 was best. } (31. Kh2 Re8 32. b4 Nb3 33. b5 Nd4 34. b6 Rd7 35. Rg5 Qd8 36. gxh7+ Kh8) 31... Kh8 { [%eval -3.72] } 32. Kg1 { [%eval -3.94] } 32... Nb3 { [%eval -4.15] } 33. Rg6? { [%eval -7.32] } { Mistake. Kf1 was best. } (33. Kf1 Qe8 34. Bxf5 exf5 35. Rxb3 Rxh7 36. Qd6 Qe7 37. Qg6 Qg7 38. Qd6 Rg8) 33... Qc5+ { [%eval -7.06] } 34. Kh2 { [%eval -7.34] } 34... Rxh7 { [%eval -6.63] } { White resigned } *
+
+
+[Event "April Real Fide BAC: Vedant Verma (1930) vs. Neal Sundar (1791) draw"]
+[Date "2026.04.12"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B54"]
+[Opening "Sicilian Defense: Modern Variations, Main Line"]
+[StudyName "April Real Fide BAC"]
+[ChapterName "Vedant Verma (1930) vs. Neal Sundar (1791) draw"]
+[ChapterURL "https://lichess.org/study/ruHk3jtQ/ZkPTfxBR"]
+[Annotator "https://lichess.org/@/apolloarcher"]
+[UTCDate "2026.04.12"]
+[UTCTime "03:21:15"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Bd3 Nc6 6. Be3 Ng4 7. Nxc6 bxc6 8. Bd4 e5 9. Bc3 Be7 10. h3 Nf6 11. O-O O-O 12. Nd2 Qc7 13. f4 Re8 14. fxe5 dxe5 15. Qe2 Be6 16. Bc4 Bc5+ 17. Kh1 Bxc4 18. Nxc4 Bd4 19. Bb4 Re6 20. c3 Bb6 21. Rad1 c5 22. Ba3 Qc6 23. Rfe1 Rd8 24. Rxd8+ Bxd8 25. b3 g6 26. g3 Nh5 27. Kh2 Kg7 28. Qe3 Bb6 29. Bc1 Qd7 30. a4 Qc7 31. Qh6+ Kg8 32. Ne3 Nf6 33. Qh4 Qc6 34. Nc4 Bd8 35. Bg5 { White offers draw, Black accepts } *
+
+
+[Event "April Real Fide BAC: Neal Sundar (1791) vs. Roi Weiss (1975) loss"]
+[Date "2026.04.12"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "D00"]
+[Opening "Queen's Pawn Game: Accelerated London System"]
+[StudyName "April Real Fide BAC"]
+[ChapterName "Neal Sundar (1791) vs. Roi Weiss (1975) loss"]
+[ChapterURL "https://lichess.org/study/ruHk3jtQ/jIUK1UI8"]
+[Annotator "https://lichess.org/@/apolloarcher"]
+[UTCDate "2026.04.12"]
+[UTCTime "03:25:06"]
+
+1. d4 d5 2. Bf4 Nf6 3. e3 e6 4. Nd2 c6 5. Bd3 Be7 6. Ngf3 b6 7. c3 Bb7 8. O-O O-O 9. Qe2 c5 10. Ne5 Nbd7 11. Ndf3 Ne4 12. Nxd7 Qxd7 13. Ne5 Qd8 14. f3 Nd6 15. Ba6 Bxa6 16. Qxa6 Rc8 17. Qe2 f6 18. Nd3 Nf7 19. Bg3 Qd7 20. Rad1 c4 21. Nf2 Bd6 22. Bxd6 Nxd6 23. e4 Rce8 24. Rfe1 Rf7 25. Qd2 Rfe7 26. Ng4 dxe4 27. fxe4 Qc6 28. e5 Ne4 29. Rxe4 Qxe4 30. exf6 Rf7 31. h3 h5 32. Re1 Qd3 33. Qxd3 cxd3 34. Ne5 Rxf6 35. Nxd3 Ref8 36. b3 Kf7 37. Ne5+ Ke7 38. Nc6+ Kd7 39. Ne5+ Kc7 40. a4 Rf2 41. Nf3 Rc2 42. c4 Kd6 43. Re3 Rf5 44. Rd3 g5 45. Re3 g4 46. hxg4 hxg4 47. Ne5 Rf4 48. Rd3 g3 49. Rxg3 Rxd4 50. Nf7+ Kc5 51. Re3 Rg4 52. g3 Kb4 53. Ne5 Rg7 54. Nc6+ Kc5 55. Nd8 Kd4 56. Nxe6+ Kxe3 57. Nxg7 Kf3 58. Nf5 Rb2 59. g4 Kxg4 60. Nd4 Kf4 { Few moves later white resigned } *
+
+
+[Event "April Real Fide BAC: Ansh Shenvi Priolkar (1745) vs. Neal Sundar (1791) loss"]
+[Date "2026.04.12"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "A45"]
+[Opening "Indian Defense: Accelerated London System"]
+[StudyName "April Real Fide BAC"]
+[ChapterName "Ansh Shenvi Priolkar (1745) vs. Neal Sundar (1791) loss"]
+[ChapterURL "https://lichess.org/study/ruHk3jtQ/keUg78pV"]
+[Annotator "https://lichess.org/@/apolloarcher"]
+[UTCDate "2026.04.12"]
+[UTCTime "03:33:29"]
+
+1. d4 Nf6 2. Bf4 e6 (2... d5 3. Nd2 e6 4. Ngf3 Bd6 5. Ne5 (5. Bxd6 Qxd6) 5... Nh5) 3. e3 d5 4. Nf3 Bd6 5. Bg3 O-O 6. c3 Ne4 7. Nbd2 Nxd2 8. Qxd2 Nd7 9. Bd3 b6 10. Qc2 h6 11. Ne5 Bxe5 12. dxe5 Nc5 13. O-O Nxd3 14. Qxd3 a5 15. Rfd1 Qe7 16. Qd4 c5 17. Qg4 a4 18. Bh4 Qc7 19. Bf6 g6 20. Qh4 Kh7 21. f4 d4 22. exd4 Bb7 23. Rd3 cxd4 24. Qxh6+ Kxh6 25. Rh3# *
+
+
+[Event "April Real Fide BAC: Neal Sundar (1791) vs. Sean Zhang (1859) draw"]
+[Date "2026.04.13"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "A45"]
+[Opening "Indian Defense: Accelerated London System"]
+[StudyName "April Real Fide BAC"]
+[ChapterName "Neal Sundar (1791) vs. Sean Zhang (1859) draw"]
+[ChapterURL "https://lichess.org/study/ruHk3jtQ/Xto2a4Km"]
+[Annotator "https://lichess.org/@/apolloarcher"]
+[UTCDate "2026.04.13"]
+[UTCTime "14:19:37"]
+
+1. d4 Nf6 2. Bf4 d5 3. e3 c5 4. c3 Nc6 5. Nf3 Qb6 6. Qb3 c4 7. Qc2 Bf5 8. Qc1 e6 9. Nbd2 Qd8 10. h3 h6 11. Ne5 Bd6 12. Nxc6 bxc6 13. Bxd6 Qxd6 14. b3 cxb3 15. axb3 O-O 16. Qa3 Qc7 17. Qa5 Qb6 18. Be2 Ne4 19. Nxe4 Bxe4 20. Qxb6 axb6 21. O-O Rfc8 22. Ra6 Rxa6 23. Bxa6 Ra8 24. Bb7 Ra3 25. Bxc6 Rxb3 26. Rc1 Bd3 27. Ba4 Ra3 28. Bd1 Kf8 29. Bf3 Ke7 30. g3 Kd6 31. Bg2 Rb3 32. Bf1 Bxf1 33. Kxf1 b5 34. Rc2 Kc6 35. Ke2 Kb6 36. Kd2 Ra3 37. Rb2 Ka5 38. Kd3 Ra1 39. Kd2 Ra4 40. Kd3 Ra3 { Draw by agreement } *
+
+
+[Event "April Real Fide BAC: Neal Sundar (1791) vs. Raajas Dixit (1784) draw"]
+[Date "2026.04.13"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "A48"]
+[Opening "Queen's Pawn Game: Barry Attack"]
+[StudyName "April Real Fide BAC"]
+[ChapterName "Neal Sundar (1791) vs. Raajas Dixit (1784) draw"]
+[ChapterURL "https://lichess.org/study/ruHk3jtQ/9cL2FKJd"]
+[Annotator "https://lichess.org/@/apolloarcher"]
+[UTCDate "2026.04.13"]
+[UTCTime "14:23:58"]
+
+1. d4 Nf6 2. Bf4 g6 3. Nc3 d5 4. Nf3 Bg7 5. e3 O-O 6. Bd3 c5 7. O-O Nc6 8. Qd2 Bg4 9. Be2 Ne4 10. Qd1 Nxc3 11. bxc3 Qa5 12. Qd3 Rac8 13. Rab1 b6 14. a4 Bf5 15. Qd2 cxd4 16. exd4 Nd8 17. Rb3 Qxa4 18. Bb5 Qa2 19. Rc1 a6 20. Bd3 Bxd3 21. Qxd3 b5 22. Ne5 Ne6 23. Bd2 Qa5 24. Rbb1 Qc7 25. Nf3 Nd8 26. Ra1 Qb7 27. Bf4 f6 28. Re1 Nf7 29. Re6 Rc6 30. Qe3 Re8 31. Nd2 Bf8 32. Nb3 Qc8 33. Nc5 Rxe6 34. Qxe6 Qxe6 35. Nxe6 Nd6 36. Rxa6 Rc8 37. Nc5 e5 38. dxe5 fxe5 39. Bxe5 Rxc5 40. Bxd6 Bxd6 41. Rxd6 Kf8 42. g3 Ke7 43. Rb6 Kd7 44. Kf1 Kc7 45. Ra6 Rxc3 46. Ra2 Kd6 47. Ke2 Kc5 48. Kd2 Rf3 49. Ke2 Rf7 50. f4 d4 51. Ra8 Rc7 52. Kd3 Kb4 53. Rd8 Rc3+ 54. Kd2 Rc4 55. Rd7 Rc6 56. Rxh7 Kc5 57. Rh6 b4 58. Rh8 Ra6 59. Rc8+ Kd5 { Draw by agreement by a few moves later } *
+
+

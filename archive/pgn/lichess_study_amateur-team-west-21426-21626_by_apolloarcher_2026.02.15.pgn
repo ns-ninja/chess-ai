@@ -1,0 +1,80 @@
+[Event "Amateur Team West 2/14/26 - 2/16/26: Neal Sundar (1710) vs. Michael Ho (1800) loss"]
+[Date "2026.02.15"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "D01"]
+[Opening "Rapport-Jobava System"]
+[StudyName "Amateur Team West 2/14/26 - 2/16/26"]
+[ChapterName "Neal Sundar (1710) vs. Michael Ho (1800) loss"]
+[ChapterURL "https://lichess.org/study/SsR48Esf/zOADKAO8"]
+[Annotator "https://lichess.org/@/apolloarcher"]
+[UTCDate "2026.02.15"]
+[UTCTime "16:25:04"]
+
+1. d4 Nf6 2. Nc3 d5 3. Bf4 a6 4. e3 c5 5. Nf3 (5. dxc5 e6 6. Na4 Qa5+ 7. c3 Bxc5 8. Nxc5 Qxc5 9. Bd3) 5... cxd4 6. exd4 Nc6 7. Qd2 Ne4 8. Qe3 Bf5 9. Nh4 Nb4 10. Bd3 Nxd3+ 11. cxd3 Nxc3 12. Nxf5 Nb5 13. a4 g6 14. axb5 gxf5 15. O-O Bg7 16. Bh6 (16. Be5 f6) 16... Bf6 17. Bg5 Qb6 18. Bxf6 Qxf6 19. Rfe1 Kd7 20. b6 (20. bxa6) 20... Rhc8 21. Ra5 e6 22. Rc5 f4 23. Qe5 Qxe5 24. Rxe5 Rc6 25. Rh5 Rh8 26. Rh4 Rxb6 27. Rxf4 Rxb2 28. Rxf7+ Ke8 29. Rfc7 Rb1+ 30. Rc1 Rxc1+ 31. Rxc1 Kd7 32. f4 a5 33. Kf2 b5 34. Ke2 a4 35. Rb1 Rb8 36. Ra1 Ra8 37. Kd2 b4 38. Kc2 Kc6 39. Kb2 Kb5 40. Rc1 h5 41. Rc7 a3+ 42. Ka2 b3+ 43. Ka1 Kb4 44. Rb7+ Kc3 45. g3 h4 46. g4 Rf8 47. f5 exf5 48. g5 Re8 { White Resignation } *
+
+
+[Event "Amateur Team West 2/14/26 - 2/16/26: Katherine Lu (1832) vs. Neal Sundar (1710) win"]
+[Date "2026.02.15"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "B90"]
+[Opening "Sicilian Defense: Najdorf Variation, Adams Attack"]
+[StudyName "Amateur Team West 2/14/26 - 2/16/26"]
+[ChapterName "Katherine Lu (1832) vs. Neal Sundar (1710) win"]
+[ChapterURL "https://lichess.org/study/SsR48Esf/sQJiWuab"]
+[Annotator "https://lichess.org/@/apolloarcher"]
+[UTCDate "2026.02.15"]
+[UTCTime "16:32:03"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. h3 e6 7. g4 d5 8. e5 Nfd7 9. Qe2 Nc6 10. Nxc6 bxc6 11. Bg2 Qc7 12. Bf4 a5 13. O-O-O Ba6 14. Qf3 Rb8 15. Kb1 Nxe5 16. Qg3 Bd6 17. Rhe1 Nc4 18. Bxd6 Qxd6 19. Qxd6 Nxd6 20. Na4 Nc4 21. b3 Bb5 22. Nc5 Nb6 23. Ka1 Nd7 24. Nxd7 Kxd7 25. c4 Ba6 26. f4 a4 27. cxd5 cxd5 28. bxa4 Rb4 29. f5 Rxa4 30. fxe6+ fxe6 31. Bf1 Bc4 32. Bxc4 Rxc4 33. Rb1 Rhc8 34. Rb6 R4c6 35. Rb7+ R8c7 36. Rxc7+ Rxc7 37. Kb2 Kd6 38. Kb3 d4 39. Rd1 Kd5 40. a4 e5 41. a5 e4 42. a6 d3 43. Ra1 d2 44. Ra5+ Kd6 45. Ra1 e3 { Black Resignation } *
+
+
+[Event "Amateur Team West 2/14/26 - 2/16/26: Neal Sundar (1710) vs. David Langlois (1874)  loss"]
+[Date "2026.02.16"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "D01"]
+[Opening "Rapport-Jobava System"]
+[StudyName "Amateur Team West 2/14/26 - 2/16/26"]
+[ChapterName "Neal Sundar (1710) vs. David Langlois (1874)  loss"]
+[ChapterURL "https://lichess.org/study/SsR48Esf/jkn8XXPJ"]
+[Annotator "https://lichess.org/@/apolloarcher"]
+[UTCDate "2026.02.16"]
+[UTCTime "05:00:43"]
+
+1. d4 d5 2. Nc3 Nf6 3. Bf4 c6 4. Nf3 Bf5 5. e3 e6 6. Ne5 h6 7. g4 Bh7 8. h4 Nbd7 { [%csl Gg5][%cal Gg4g5] } 9. f3 (9. g5 hxg5 10. hxg5 { [%csl Gc2][%cal Gh7c2] } 10... Bxc2 11. Rxh8 Bxd1 12. Kxd1 { [%csl Gf6] } 12... Ne4 13. Nxe4 dxe4 14. Nc4 { [%csl Ge8,Gh8,Gf1,Gd6][%cal Gc4d6] } 14... Nb6 15. Bd6) 9... Nxe5 10. dxe5 (10. Bxe5 Nd7 11. Bg3) 10... Nd7 11. Bd3 Be7 12. Bg3 Qb6 13. Qc1 Bc5 14. Bf4 Bxd3 15. cxd3 d4 16. Nd1 dxe3 17. Ke2 Bd4 18. Nxe3 Nxe5 19. Bxe5 Bxe5 20. Nc4 Qc5 21. Qe3 Qxe3+ 22. Kxe3 Bc7 23. d4 O-O-O 24. Rad1 Rd7 25. f4 Rhd8 26. Rhf1 c5 27. Ne5 Bxe5 28. fxe5 Rxd4 29. Rxd4 cxd4+ 30. Kd3 Rd7 31. g5 hxg5 32. hxg5 Kd8 33. g6 fxg6 34. Rg1 Ke8 35. Rxg6 Kf7 36. Rg4 Rd5 37. Rf4+ Ke7 38. Rg4 Kf7 39. Rf4+ Kg8 40. Rf1 Rxe5 41. Kxd4 Rb5 42. b3 Rd5+ 43. Kc4 Rd7 44. Rf2 g5 45. Rf6 g4 46. Rxe6 g3 47. Re2 Rg7 48. Rg2 Kf7 49. Kd4 Ke6 50. Ke4 Kd6 51. Kd4 Kc6 52. Kc4 Rg4+ 53. Kc3 Kc5 54. b4+ Kb5 55. a3 Kc6 56. Kc2 Kd5 57. Kd3 b5 58. Ke3 Kc4 59. Kf3 Rg7 60. Rg1 g2 { White resignation } *
+
+
+[Event "Amateur Team West 2/14/26 - 2/16/26: Shreyank Krishnan (1880) vs. Neal Sundar (1710) draw"]
+[Date "2026.02.16"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "E32"]
+[Opening "Nimzo-Indian Defense: Classical Variation"]
+[StudyName "Amateur Team West 2/14/26 - 2/16/26"]
+[ChapterName "Shreyank Krishnan (1880) vs. Neal Sundar (1710) draw"]
+[ChapterURL "https://lichess.org/study/SsR48Esf/em8uZ3w4"]
+[Annotator "https://lichess.org/@/apolloarcher"]
+[UTCDate "2026.02.16"]
+[UTCTime "05:07:42"]
+
+1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Qc2 O-O (4... d5) 5. e4 Bxc3+ (5... d5 6. e5 Ne4 7. Bd3 c5 8. Ne2 cxd4 9. Nxd4 Nd7 10. Bf4 Qh4 11. g3 Qh3 12. cxd5 (12. Bxe4 dxe4 13. Qxe4 Bxc3+ 14. bxc3 Nc5 { [%csl Gc4,Gc3,Ge5,Gf4,Gg3,Ge1][%cal Gh3f1] }) 12... exd5 13. O-O-O Bxc3 14. bxc3 Nb6) 6. bxc3 d5 7. e5 Nfd7 8. cxd5 exd5 9. Bd3 h6 10. Nf3 c5 11. O-O Nc6 12. Bf5 Re8 13. Re1 Nf8 14. dxc5 Qa5 15. Bxc8 Raxc8 16. Qb3 Qxc5 17. Be3 Qe7 18. Qxd5 Nxe5 19. Nxe5 Qxe5 20. Qxb7 Qxc3 21. Qxa7 Ra8 22. Qc5 (22. Qb7 Rxa2) 22... Qxc5 23. Bxc5 Rxe1+ (23... Rxa2) 24. Rxe1 Rxa2 25. h3 Ne6 26. Bd6 Rd2 27. Bg3 Nd4 28. Be5 Ne6 29. Re3 Rd5 30. f4 f6 31. Bxf6 Nxf4 32. Be5 Ng6 33. Bc3 Nf4 34. Re4 Rd3 35. Be5 Nxh3+ 36. gxh3 Rxh3 37. Rg4 g5 38. Bf4 Rh4 39. Rxh4 gxh4 { Draw by agreement } *
+
+
+[Event "Amateur Team West 2/14/26 - 2/16/26: Akshaj Pulijala (2066) vs. Neal Sundar (1710) loss"]
+[Date "2026.02.17"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "A45"]
+[Opening "Indian Defense"]
+[StudyName "Amateur Team West 2/14/26 - 2/16/26"]
+[ChapterName "Akshaj Pulijala (2066) vs. Neal Sundar (1710) loss"]
+[ChapterURL "https://lichess.org/study/SsR48Esf/PSdZSLUZ"]
+[Annotator "https://lichess.org/@/apolloarcher"]
+[UTCDate "2026.02.17"]
+[UTCTime "15:33:53"]
+
+1. d4 Nf6 2. Nc3 e6 3. e4 Bb4 4. e5 Nd5 5. Bd2 Bxc3 6. bxc3 O-O 7. Bd3 d6 8. f4 Nc6 9. Nf3 h6 10. O-O a5 11. Qe1 b6 12. Qg3 Kh8 13. a3 Ba6 14. c4 Nde7 15. f5 Nxf5 16. Bxf5 exf5 17. Bc3 Bxc4 18. d5 Bxf1 19. exd6 f6 20. Rxf1 Ne5 21. Nxe5 fxe5 22. Qxe5 Rf7 23. Rxf5 cxd6 24. Qe6 Rxf5 { Blundered mate in 2 } 25. Qxh6+ Kg8 26. Qxg7# *
+
+
